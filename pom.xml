@@ -13,9 +13,9 @@
     <description>Limits enchantments and removes non-vanilla attributes from items.</description>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <paper.api.version>1.21.11-R0.1-SNAPSHOT</paper.api.version>
+        <paper.api.version>[26.1.2,)</paper.api.version>
         <lombok.version>1.18.38</lombok.version>
     </properties>
 
