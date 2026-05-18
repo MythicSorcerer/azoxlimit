@@ -99,8 +99,8 @@ Output: `target/azox-limit-1.0.0.jar`
 
 ## Requirements
 
-- Minecraft Paper 1.21.11+
-- Java 21+
+- Minecraft Paper 26.1.2+
+- Java 21+ (Java 25 recommended)
 
 ## License
 
