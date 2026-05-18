@@ -1,0 +1,128 @@
+settings:
+  prefix: "&8[&6AzoxLimit&8] "
+  debug: false
+
+enchantments:
+  enabled: true
+  max-levels:
+    PROTECTION: 4
+    FIRE_PROTECTION: 4
+    FEATHER_FALLING: 4
+    BLAST_PROTECTION: 4
+    PROJECTILE_PROTECTION: 4
+    RESPIRATION: 3
+    AQUA_AFFINITY: 1
+    THORNS: 3
+    DEPTH_STRIDER: 3
+    FROST_WALKER: 2
+    BINDING_CURSE: 1
+    SHARPNESS: 5
+    SMITE: 5
+    BANE_OF_ARTHROPODS: 5
+    KNOCKBACK: 2
+    FIRE_ASPECT: 2
+    LOOTING: 3
+    SWEEPING: 3
+    EFFICIENCY: 5
+    SILK_TOUCH: 1
+    UNBREAKING: 5
+    FORTUNE: 3
+    POWER: 5
+    PUNCH: 2
+    FLAME: 1
+    INFINITY: 1
+    LUCK_OF_THE_SEA: 3
+    LURE: 3
+    LOYALTY: 3
+    IMPALING: 5
+    RIPTIDE: 3
+    CHANNELING: 1
+    MULTISHOT: 1
+    QUICK_CHARGE: 3
+    PIERCING: 4
+    DENSITY: 5
+    BREACH: 4
+    WIND_CHARGE: 3
+    SOUL_SPEED: 3
+    SWIFT_SNEAK: 3
+    MENDING: 1
+    VANISHING_CURSE: 1
+
+attributes:
+  enabled: true
+  remove-non-vanilla: true
+  allowed-attributes:
+    GENERIC_MAX_HEALTH: true
+    GENERIC_FOLLOW_RANGE: true
+    GENERIC_KNOCKBACK_RESISTANCE: true
+    GENERIC_MOVEMENT_SPEED: true
+    GENERIC_ATTACK_DAMAGE: true
+    GENERIC_ARMOR: true
+    GENERIC_ARMOR_TOUGHNESS: true
+    GENERIC_ATTACK_SPEED: true
+    GENERIC_LUCK: true
+    GENERIC_JUMP_STRENGTH: true
+    HORSE_JUMP_STRENGTH: true
+    ZOMBIE_SPAWN_REINFORCEMENTS: true
+    GENERIC_SCALE: true
+    GENERIC_BLOCK_INTERACTION_RANGE: true
+    GENERIC_ENTITY_INTERACTION_RANGE: true
+
+sanitize:
+  enabled: true
+  check-intervals:
+    on-player-join: true
+    on-inventory-open: true
+    on-item-interact: true
+    on-craft: true
+    on-anvil: true
+
+limited-items:
+  enabled: true
+
+  # Remove recipes so they cannot be crafted
+  blocked-recipes:
+    - mace
+    - netherite_ingot
+    - netherite_block
+    - netherite_chestplate
+    - netherite_leggings
+    - netherite_helmet
+    - netherite_boots
+    - netherite_sword
+    - netherite_pickaxe
+    - netherite_axe
+    - netherite_shovel
+    - netherite_hoe
+    - netherite_upgrade_smithing_template
+
+  # Delete items from player inventory when found (banned items)
+  remove-items:
+    - mace
+    - netherite_ingot
+    - netherite_scrap
+    - netherite_block
+
+  # Block specific brewing recipes by ingredient + result
+  blocked-brewing-recipes:
+    - dragon_breath
+    - glow_ink_sac
+    - spider_eye
+
+  # Block specific villager trades by item result
+  block-villager-trades:
+    - tipped_arrow
+    - arrow
+
+  # Delete items when mobs drop them (prevents world堆积)
+  block-mob-drops:
+    - rotten_flesh
+
+  # Delete tipped arrows from dispensers
+  delete-tipped-arrows:
+    - poison
+    - weakness
+    - undead_potion
+
+  # Block specific villager trades by item result
+  block-villager-trades: []

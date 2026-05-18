@@ -1,0 +1,6 @@
+name: AzoxLimit
+version: '${project.version}'
+main: com.ximotu.azox.AzoxLimit
+api-version: '1.21'
+description: Limits enchantments and removes non-vanilla attributes from items.
+author: Ximotu
